@@ -1,24 +1,24 @@
 
 # variable type #1
-# simple integer
+# integer
 myage = 22
 print("My age is", myage)
 
 
 # variable type #2
-# simple float
+# float
 myheight = 6.2
 print("My heigth is", myheight)
 
 
 # variable type #3
-# simple string
+# string
 myname = "Gobinda Paul"
 print("My name is" , myname)
 
 
 # variable type #4
-# simple bool
+# bool
 areYouBengali = True
 areYouCanadian = False
 print("I am Bangladeshi:", areYouBengali)
@@ -43,8 +43,18 @@ print("My tuple size:", len(mytuple))
 
 
 # variable type #7
+# set: unique items
+mycousins = {"noyon", "bijoy", "ayush"}
+print("My cousins are:", mycousins)
+print("noyon is my cousin:", 'noyon' in mycousins)
+print("joy is my cousin:", 'joy' in mycousins)
+print("My total cousins :", len(mycousins))
+
+
+# variable type #8
 # Dictionary: key-value pair
 oneUsd = {"BDT" : 120.2, "CAD" : 1.4, "INR" : 98.5}
 print("One USD equivalent", oneUsd["BDT"], "Bangladeshi Taka")
 print("One USD equivalent", oneUsd["CAD"], "Canadian Dollar")
+print("One USD equivalent", oneUsd.get("KRW"), "Korean Won")
 print("My dictionary size", len(oneUsd))
