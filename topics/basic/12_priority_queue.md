@@ -144,12 +144,12 @@ while heap.isEmpty() == False:
 
 
 #### 6. Max heap implementation with class type items
-# doesn't work
+
 ```python
 import heapq
 
 class Student:
-    def __init__(self, id, age, name):
+    def __init__(self, age, id, name):
         self.id = id
         self.age = age
         self.name = name
@@ -166,7 +166,7 @@ class MaxHeap:
         return len(self.studentList) == 0
     
     def push(self, student):
-        obj = (-student.age, -student.id, student)
+        obj = (-student.age, student.id, student)
         heapq.heappush(self.studentList, obj)
     
     def pop(self):
@@ -188,9 +188,9 @@ heap.push(Student(22, 3, "ayush"))
 print(heap.peek().name) # print joy
 print(heap.peek().name) # print joy
 
-# print: joy -> gobinda -> ayush -> bijoy
+# print: joy -> bijoy -> ayush -> gobinda
 while heap.isEmpty() == False:
     print(heap.pop().name)
 
-#program ends
+# Program ends here
 ```
