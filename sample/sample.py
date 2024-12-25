@@ -1,6 +1,8 @@
-from collections import deque
+s = "apple, banana, cherry"
+# Splitting
+fruits = s.split(", ")
+print(fruits)  # Output: ['apple', 'banana', 'cherry']
 
-# Create a deque from an array
-myArray = [7, 3, 9]
-myDeque = deque(myArray)
-print("current state:", myDeque)
+# Joining
+joined = " & ".join(fruits)
+print(joined)  # Output: apple & banana & cherry
