@@ -1,5 +1,5 @@
 
-## Priority Queue
+## Priority Queue (Max Heap & Min Heap)
 Here we will implement both max heap and min heap.
 
 #### 1. Min heap (push & pop)
